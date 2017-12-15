@@ -1,10 +1,15 @@
+<%
+  suggestion_select = @suggestion_hash.to_a.sample(1).to_h
+  suggestion = suggestion_select.keys.to_s.gsub(/['\[\]":]/, '')
+  author = suggestion_select.values.to_s.gsub(/['\[\]":]/, '')
+%>
 <h1>What Should I Code?</h1>
 <div id="suggestion">
-  [Suggestion goes here]
+  <%= suggestion %>
 </div>
-<p><i>Suggested by: admin</i></p>
-<button type="button">New Suggestion</button>
+<p><i>Suggested by: <%= author %></i></p>
+<button type="button" onclick="location.reload()">New Suggestion</button>
 
 <div id="footer">
-  <p><a href="credit.html.erb">Credit</a> | <a href="submit.html.erb">Submit</a> | <a href="advanced.html.erb">Advanced</a></p>
+  <p><a href="pages/credit">Credit</a> | <a href="pages/submit">Submit</a><!-- | <a href="pages/advanced">Advanced</a>--></p>
 </div>
