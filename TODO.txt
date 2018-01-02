@@ -1,0 +1,11 @@
+TODO:
+
+- Fill out suggestion hash
+- Write repetition canceller thing
+    -- Makes sure that the same suggestion isn't displayed twice
+- Finish advanced search
+    -- Add specificity for different languages by adding nested array inside suggestion's value
+    -- Make sure it displays only things that are actually possible for that language
+- Make Credits.html.erb look pretty
+- Add suggestion box
+    --
